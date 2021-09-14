@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".screens.AddNewNote_Fragment">
+
+    <EditText
+        android:id="@+id/enterNoteName"
+        android:hint="@string/default_Text_Hint"
+        android:layout_margin="@dimen/NoteMargin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <EditText
+        android:id="@+id/enterNote"
+        android:hint="@string/Name_Hint"
+        android:layout_margin="@dimen/NoteMargin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/enterNoteName"
+        app:layout_constraintEnd_toEndOf="@id/enterNoteName"
+        app:layout_constraintTop_toBottomOf="@id/enterNoteName"
+        />
+
+    <Button
+        android:id="@+id/addNoteBtn"
+        android:text="@string/addNote"
+        android:layout_width="@dimen/btnWidth"
+        android:layout_height="@dimen/btnHeight"
+        android:layout_margin="@dimen/NoteMargin"
+        app:layout_constraintTop_toBottomOf="@id/enterNote"
+        app:layout_constraintStart_toStartOf="@id/enterNote"
+        app:layout_constraintEnd_toEndOf="@id/enterNote"
+        android:background="@drawable/round_corner"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/btnText"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

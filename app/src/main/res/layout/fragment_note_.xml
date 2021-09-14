@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".screens.Note_Fragment">
+
+    <TextView
+        android:id="@+id/noteName_"
+        tools:text = "Note Name"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/itemNoteName"
+        android:gravity="center"
+        android:background="@drawable/round_corner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/NoteMargin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/noteText_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/defaultTextSize"
+        app:layout_constraintEnd_toEndOf="@id/noteName_"
+        app:layout_constraintStart_toStartOf="@id/noteName_"
+        app:layout_constraintTop_toBottomOf="@id/noteName_"
+        tools:text="Note Text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

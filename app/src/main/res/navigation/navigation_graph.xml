@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/main_Fragment">
+
+    <fragment
+        android:id="@+id/addNewNote_Fragment"
+        android:name="com.example.ez_notes.screens.AddNewNote_Fragment"
+        android:label="fragment_add_new_note_"
+        tools:layout="@layout/fragment_add_new_note_" >
+        <action
+            android:id="@+id/action_addNewNote_Fragment_to_main_Fragment"
+            app:destination="@id/main_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/note_Fragment"
+        android:name="com.example.ez_notes.screens.Note_Fragment"
+        android:label="fragment_note_"
+        tools:layout="@layout/fragment_note_" >
+        <action
+            android:id="@+id/action_note_Fragment_to_main_Fragment"
+            app:destination="@id/main_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/stratApp_Fragment"
+        android:name="com.example.ez_notes.screens.StratApp_Fragment"
+        android:label="fragment_strat_app_"
+        tools:layout="@layout/fragment_strat_app_" >
+        <action
+            android:id="@+id/action_stratApp_Fragment_to_main_Fragment2"
+            app:destination="@id/main_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/main_Fragment"
+        android:name="com.example.ez_notes.screens.Main_Fragment"
+        android:label="fragment_main_"
+        tools:layout="@layout/fragment_main_" >
+        <action
+            android:id="@+id/action_main_Fragment_to_stratApp_Fragment2"
+            app:destination="@id/stratApp_Fragment" />
+        <action
+            android:id="@+id/action_main_Fragment_to_stratApp_Fragment3"
+            app:destination="@id/stratApp_Fragment" />
+        <action
+            android:id="@+id/action_main_Fragment_to_note_Fragment"
+            app:destination="@id/note_Fragment" />
+        <action
+            android:id="@+id/action_main_Fragment_to_addNewNote_Fragment"
+            app:destination="@id/addNewNote_Fragment" />
+    </fragment>
+</navigation>

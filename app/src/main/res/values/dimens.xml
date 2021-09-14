@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cardElevation">10dp</dimen>
+    <dimen name="cardCornerRadius">25dp</dimen>
+    <dimen name="itemNoteName">20sp</dimen>
+    <dimen name="NoteMargin">16dp</dimen>
+    <dimen name="btnText">15sp</dimen>
+    <dimen name="btnWidth">150dp</dimen>
+    <dimen name="btnHeight">50dp</dimen>
+    <dimen name="defaultTextSize">15sp</dimen>
+    <dimen name="signsText">20sp</dimen>
+</resources>

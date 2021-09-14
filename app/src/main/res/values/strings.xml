@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EZ_Notes</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_Text_Hint">Текст заметки</string>
+    <string name="Name_Hint">Название заметки</string>
+    <string name="addNote">Добавить</string>
+    <string name="welcomeSign">Выберите тип хранения:</string>
+</resources>
