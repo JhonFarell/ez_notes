@@ -5,4 +5,9 @@
     <string name="Name_Hint">Название заметки</string>
     <string name="addNote">Добавить</string>
     <string name="welcomeSign">Выберите тип хранения:</string>
+    <string name="room">Локально</string>
+    <string name="firebase">Удаленно</string>
+    <string name="or">Или</string>
+    <string name="notes">Заметки</string>
+    <string name="toastEnterName">Введите имя заметки!</string>
 </resources>

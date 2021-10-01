@@ -3,11 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation_graph"
-    app:startDestination="@id/main_Fragment">
+    app:startDestination="@id/stratApp_Fragment">
 
     <fragment
         android:id="@+id/addNewNote_Fragment"
-        android:name="com.example.ez_notes.screens.AddNewNote_Fragment"
+        android:name="com.example.ez_notes.screens.add_new_note.AddNewNote_Fragment"
         android:label="fragment_add_new_note_"
         tools:layout="@layout/fragment_add_new_note_" >
         <action
@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/stratApp_Fragment"
-        android:name="com.example.ez_notes.screens.StratApp_Fragment"
+        android:name="com.example.ez_notes.screens.start.StratApp_Fragment"
         android:label="fragment_strat_app_"
         tools:layout="@layout/fragment_strat_app_" >
         <action
@@ -34,7 +34,7 @@
     </fragment>
     <fragment
         android:id="@+id/main_Fragment"
-        android:name="com.example.ez_notes.screens.Main_Fragment"
+        android:name="com.example.ez_notes.screens.main.Main_Fragment"
         android:label="fragment_main_"
         tools:layout="@layout/fragment_main_" >
         <action

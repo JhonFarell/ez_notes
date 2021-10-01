@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="btnStyle">
+        <item name="android:layout_width">@dimen/defaultButtonWidth</item>
+        <item name="android:layout_height">@dimen/defaultButtonHeight</item>
+        <item name="android:layout_margin">@dimen/NoteMargin</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/btnText</item>
+    </style>
+
+    <style name="titleTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/signsText</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_margin">@dimen/NoteMargin</item>
+    </style>
+</resources>

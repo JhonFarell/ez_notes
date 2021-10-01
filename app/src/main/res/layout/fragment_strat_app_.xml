@@ -4,20 +4,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".screens.StratApp_Fragment">
+    tools:context=".screens.start.StratApp_Fragment">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/chooseType"
         android:text="@string/welcomeSign"
-        android:textSize="@dimen/signsText"
-        android:textColor="@color/black"
-        android:layout_margin="@dimen/NoteMargin"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="150dp"
+        style="@style/titleTextStyle" />
+
+    <TextView
+        android:id="@+id/orText"
+        android:text="@string/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/roomBtn"
+        app:layout_constraintEnd_toEndOf="@id/roomBtn"
+        app:layout_constraintTop_toBottomOf="@id/roomBtn"
+        style="@style/titleTextStyle"
         />
 
+    <Button
+        android:id="@+id/roomBtn"
+        app:layout_constraintStart_toStartOf="@id/chooseType"
+        app:layout_constraintEnd_toEndOf="@id/chooseType"
+        app:layout_constraintTop_toBottomOf="@id/chooseType"
+        android:text="@string/room"
+        style="@style/btnStyle" />
+    <Button
+        android:id="@+id/fbBtn"
+        app:layout_constraintStart_toStartOf="@id/orText"
+        app:layout_constraintEnd_toEndOf="@id/orText"
+        app:layout_constraintTop_toBottomOf="@id/orText"
+        android:text="@string/firebase"
+        style="@style/btnStyle" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

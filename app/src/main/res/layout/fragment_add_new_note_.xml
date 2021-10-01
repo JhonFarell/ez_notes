@@ -4,11 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".screens.AddNewNote_Fragment">
+    tools:context=".screens.add_new_note.AddNewNote_Fragment">
 
     <EditText
         android:id="@+id/enterNoteName"
-        android:hint="@string/default_Text_Hint"
+        android:hint="@string/Name_Hint"
         android:layout_margin="@dimen/NoteMargin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,7 +18,7 @@
         />
     <EditText
         android:id="@+id/enterNote"
-        android:hint="@string/Name_Hint"
+        android:hint="@string/default_Text_Hint"
         android:layout_margin="@dimen/NoteMargin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

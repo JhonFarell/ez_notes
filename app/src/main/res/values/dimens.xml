@@ -9,4 +9,6 @@
     <dimen name="btnHeight">50dp</dimen>
     <dimen name="defaultTextSize">15sp</dimen>
     <dimen name="signsText">20sp</dimen>
+    <dimen name="defaultButtonWidth">150dp</dimen>
+    <dimen name="defaultButtonHeight">100dp</dimen>
 </resources>
